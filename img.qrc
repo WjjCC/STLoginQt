@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/btquit.png</file>
+        <file>img/lgbackground.png</file>
+        <file>img/lgconct.png</file>
+        <file>img/lglogin.png</file>
+        <file>img/lglogo.png</file>
+        <file>img/lgpassword.png</file>
+        <file>img/lgserver.png</file>
+        <file>img/lgset.png</file>
+        <file>img/lguser.png</file>
+    </qresource>
+</RCC>
