@@ -14,9 +14,11 @@ class DuiMainWindow : public QMainWindow
 public:
     explicit DuiMainWindow(QWidget *parent = 0);
     ~DuiMainWindow();
-
+private:
+    void Init();
 private:
     Ui::DuiMainWindow *ui;
+    //QVBoxLayout* mlvgLayout;
 };
 
 #endif // DUIMAINWINDOW_H

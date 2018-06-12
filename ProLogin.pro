@@ -25,10 +25,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    duimainwindow.cpp
+    duimainwindow.cpp \
+    wpnglineedit.cpp
 
 HEADERS  += mainwindow.h \
-    duimainwindow.h
+    duimainwindow.h \
+    wpnglineedit.h
 
 FORMS    += \
     duimainwindow.ui
