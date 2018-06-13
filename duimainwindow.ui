@@ -6,12 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1910</width>
+    <width>1920</width>
     <height>1080</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
@@ -20,7 +23,7 @@
    <property name="styleSheet">
     <string notr="true">QWidget#centralwidget{border-image: url(:/img/lgbackground.png)};</string>
    </property>
-   <widget class="QWidget" name="widget" native="true">
+   <widget class="QWidget" name="lgwidget" native="true">
     <property name="geometry">
      <rect>
       <x>1122</x>
@@ -29,9 +32,281 @@
       <height>606</height>
      </rect>
     </property>
+    <property name="minimumSize">
+     <size>
+      <width>362</width>
+      <height>606</height>
+     </size>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>362</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(235, 235, 235);</string>
+     </property>
+     <widget class="QToolButton" name="toolButton">
+      <property name="geometry">
+       <rect>
+        <x>337</x>
+        <y>0</y>
+        <width>25</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/img/lgset.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>120</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 12pt &quot;黑体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>用户登录</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>135</x>
+        <y>0</y>
+        <width>191</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Adobe Caslon Pro&quot;;
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="text">
+       <string>CMS客户端</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+      </property>
+      <property name="indent">
+       <number>-2</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>58</y>
+       <width>230</width>
+       <height>77</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/img/lglogo.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="LbUsr">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>180</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>用户账号</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="LbPw">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>240</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>登录密码</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>300</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>服务器</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>370</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>连接类型</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="PBtlogin">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>510</y>
+       <width>116</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/img/lglogin.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="PBtquit">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>510</y>
+       <width>116</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/img/btquit.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>450</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>记住密码</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_2">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>450</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>自动登录</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LEdPw">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>260</y>
+       <width>261</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::DefaultContextMenu</enum>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>320</y>
+       <width>261</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>192.168.0.6</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>192.168.0.256</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="comboBox_2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>390</y>
+       <width>261</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>192.168.0.6</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>192.168.0.256</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="LEdUsr">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>200</y>
+       <width>251</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
    </widget>
   </widget>
  </widget>
