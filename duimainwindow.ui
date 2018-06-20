@@ -198,6 +198,9 @@
      <property name="text">
       <string/>
      </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
     </widget>
     <widget class="QPushButton" name="PBtquit">
      <property name="geometry">
@@ -215,7 +218,7 @@
       <string/>
      </property>
     </widget>
-    <widget class="QCheckBox" name="checkBox">
+    <widget class="QCheckBox" name="CkbRp">
      <property name="geometry">
       <rect>
        <x>60</x>
@@ -228,7 +231,7 @@
       <string>记住密码</string>
      </property>
     </widget>
-    <widget class="QCheckBox" name="checkBox_2">
+    <widget class="QCheckBox" name="CKbAtLg">
      <property name="geometry">
       <rect>
        <x>190</x>
@@ -246,8 +249,8 @@
       <rect>
        <x>60</x>
        <y>260</y>
-       <width>261</width>
-       <height>31</height>
+       <width>238</width>
+       <height>28</height>
       </rect>
      </property>
      <property name="contextMenuPolicy">
@@ -257,53 +260,59 @@
       <enum>QLineEdit::Password</enum>
      </property>
     </widget>
-    <widget class="QComboBox" name="comboBox">
+    <widget class="QComboBox" name="CbbSer">
      <property name="geometry">
       <rect>
        <x>60</x>
-       <y>320</y>
-       <width>261</width>
-       <height>22</height>
+       <y>330</y>
+       <width>238</width>
+       <height>28</height>
       </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="currentText">
+      <string>192.168.1.0</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="maxVisibleItems">
+      <number>10</number>
      </property>
      <item>
       <property name="text">
-       <string>192.168.0.6</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>192.168.0.256</string>
+       <string>192.168.1.0</string>
       </property>
      </item>
     </widget>
-    <widget class="QComboBox" name="comboBox_2">
+    <widget class="QComboBox" name="CbbConType">
      <property name="geometry">
       <rect>
        <x>60</x>
        <y>390</y>
-       <width>261</width>
-       <height>22</height>
+       <width>238</width>
+       <height>28</height>
       </rect>
      </property>
-     <item>
-      <property name="text">
-       <string>192.168.0.6</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>192.168.0.256</string>
-      </property>
-     </item>
+     <property name="insertPolicy">
+      <enum>QComboBox::InsertAtTop</enum>
+     </property>
     </widget>
     <widget class="QLineEdit" name="LEdUsr">
      <property name="geometry">
       <rect>
        <x>60</x>
        <y>200</y>
-       <width>251</width>
-       <height>31</height>
+       <width>238</width>
+       <height>28</height>
       </rect>
      </property>
     </widget>

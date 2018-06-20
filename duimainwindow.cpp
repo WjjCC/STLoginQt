@@ -19,4 +19,15 @@ void DuiMainWindow::Init(){
     ui->centralwidget->setFixedSize(1910,1080);
     new WPngLineEdit("", ui->LEdUsr,"lguser.png");
     new WPngLineEdit("", ui->LEdPw,"lgpassword.png");
+
+    QLineEdit *pleSer =new QLineEdit();
+    new WPngLineEdit("",pleSer,"lgserver.png");
+    ui->CbbSer->setLineEdit(pleSer);
+    ui->CbbSer->setEditable(true);
+
+    QLineEdit *pleconct =new QLineEdit();
+    new WPngLineEdit("",pleconct,"lgconct.png");
+    ui->CbbConType->setLineEdit(pleconct);
+    ui->CbbConType->setEditable(true);
+
 }
